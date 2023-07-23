@@ -16,14 +16,16 @@ to run this program, you will need:
 # How to Use
 
 Clone this repository to your local machine:
- git clone https://github.com/yourusername/your-repo.git
- cd your-repo
+ git clone https://github.com/elizamirzoyan/Task3.git
+ cd Task3
  
- Compile the program using the C++ compiler:
-  g++ main.cpp -o simple_socket_program
+ Compile the server and client files separately:
+  g++ server.cpp -o server
+  g++ client.cpp -o client
+
   
 Run the server:
-./simple_socket_program server
+./server
 
 In a separate terminal, run the client:
-./simple_socket_program client
+./client

@@ -9,14 +9,16 @@ int main() {
     const std::string serverIP = "10.0.2.15"; 
     const int port = 12345;
 
-    // Create socket
+    // creating socket
+   
     int clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket == -1) {
         std::cerr << "Error creating socket.\n";
         return 1;
     }
 
-    // Prepare the sockaddr_in structure
+    // Preparing  the sockaddr_in structure
+    
     sockaddr_in serverAddr;
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(port);
